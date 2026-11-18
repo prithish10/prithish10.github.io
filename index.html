@@ -1,42 +1,148 @@
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-CH">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <meta name="description"
-        content="Mein Portfolio mit Webprojekten und technischen Fähigkeiten.">
-  <title>Mein Web Engineering Portfolio</title>
+        content="Portfolio mit Projekten aus Digital Business & AI und Web Engineering.">
+
+  <title>Web Engineering | Mein Portfolio</title>
 </head>
+
 <body>
-  <header>
+
+  <!-- Kopfbereich und Navigation -->
+  <header class="site-header">
+    <a href="#start" class="logo">Portfolio.</a>
+
     <nav aria-label="Hauptnavigation">
-      <a href="#projekte">Projekte</a>
-      <a href="#skills">Skills</a>
-      <a href="#kontakt">Kontakt</a>
+      <ul>
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#projekte">Projekte</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <h1>Mein Web Engineering Portfolio</h1>
-    <p>Willkommen auf meiner Portfolio-Website.</p>
+  <main id="start">
 
-    <section id="projekte">
+    <!-- Startbereich -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p>Digital Business & AI | BFH</p>
+
+      <h1 id="hero-title">
+        Mein Web Engineering Portfolio
+      </h1>
+
+      <p>
+        Willkommen auf meinem Portfolio.
+        Hier präsentiere ich meine Projekte,
+        Technologien und Erfahrungen
+        aus dem Studium.
+      </p>
+
+      <a href="#projekte" class="button">
+        Projekte entdecken
+      </a>
+    </section>
+
+    <!-- Über mich -->
+    <section id="ueber-mich" class="about">
+      <h2>Über mich</h2>
+
+      <p>
+        Ich studiere Digital Business & AI an der
+        Berner Fachhochschule und beschäftige
+        mich mit digitalen Geschäftsmodellen,
+        Webentwicklung und neuen Technologien.
+      </p>
+    </section>
+
+    <!-- Projekte -->
+    <section id="projekte" class="projects">
       <h2>Meine Projekte</h2>
-      <p>Hier erscheinen meine Projekte.</p>
+
+      <p>
+        Eine Auswahl meiner Studienprojekte.
+      </p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3>WerkSpot</h3>
+          <p>
+            Eine Webanwendung zur Suche nach
+            Park- und Ladezonen in Bern.
+            Das Projekt nutzt Parkplatzdaten
+            aus dem Geoportal Bern.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>StudyShift</h3>
+          <p>
+            Ein Konzept für einen intelligenten
+            Studien- und Alltagsplaner,
+            der durch generative KI unterstützt
+            werden soll.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>BFH Lost & Found</h3>
+          <p>
+            Ein Gruppenprojekt zur Konzeption
+            einer digitalen Lösung für
+            verlorene und gefundene Gegenstände.
+          </p>
+        </article>
+
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Meine Skills</h2>
-      <p>Hier erscheinen meine Technologien.</p>
+    <!-- Technologien -->
+    <section id="skills" class="skills">
+      <h2>Technologien & Skills</h2>
+
+      <p>
+        Technologien und Methoden, mit denen
+        ich mich im Studium beschäftige.
+      </p>
+
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>BPMN & Prozessmodellierung</li>
+      </ul>
     </section>
 
-    <section id="kontakt">
+    <!-- Kontakt -->
+    <section id="kontakt" class="contact">
       <h2>Kontakt</h2>
-      <p>Hier entsteht der Kontaktbereich.</p>
+
+      <p>
+        Weitere Informationen zu meinen
+        Projekten findest du auf GitHub.
+      </p>
+
+      <a href="https://github.com/prithish10">
+        Mein GitHub-Profil
+      </a>
     </section>
+
   </main>
+
+  <!-- Fussbereich -->
+  <footer class="site-footer">
+    <p>© 2026 | Web Engineering Portfolio</p>
+  </footer>
+
 </body>
 </html>
-   
+  
