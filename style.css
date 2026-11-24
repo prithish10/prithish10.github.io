@@ -140,19 +140,22 @@ h2 {
   color: var(--muted);
 }
 
-/* Projektkarten: CSS Grid (Vorlesung 2) */
+/* Projektkarten: Grid (Vorl. 2), flexible Bilder und innere Flexbox */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.2rem;
   margin-top: 2rem;
   counter-reset: project;
+  align-items: stretch;
 }
 .project-card {
   counter-increment: project;
+  position: relative;
   min-width: 0;
-  min-height: 265px;
-  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 18px;
   background: linear-gradient(145deg, var(--surface), #111b2d);
@@ -160,14 +163,124 @@ h2 {
 }
 .project-card::before {
   content: "PROJEKT 0" counter(project);
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 800;
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  color: #ffffff;
+  background: rgba(11, 17, 32, 0.88);
+  border: 1px solid rgba(255,255,255,0.22);
+  font-size: 0.7rem;
   letter-spacing: 0.1em;
+  font-weight: 800;
 }
-.project-card:hover { border-color: var(--accent); transform: translateY(-4px); }
-.project-card h3 { margin: 1.3rem 0 0.6rem; font-size: 1.4rem; }
-.project-card p { margin: 0; color: var(--muted); }
+.project-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-soft);
+}
+.project-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.4rem;
+  gap: 0;
+}
+.project-type {
+  margin: 0 0 0.45rem;
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.project-card h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+.project-description {
+  margin: 0 0 1.4rem;
+  color: var(--muted);
+  line-height: 1.58;
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: auto 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+.project-tags li {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.28rem 0.65rem;
+  background: #1a2a40;
+  color: #e2e8f0;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #60738e;
+  border-radius: 10px;
+  color: #f8fafc;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+.project-link-primary {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+.project-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.project-link-primary:hover {
+  color: var(--bg);
+  background: #fdba74;
+}
+.project-more {
+  margin-top: 0.15rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.8rem;
+}
+.project-more summary {
+  cursor: pointer;
+  color: #fdba74;
+  font-weight: 700;
+  min-height: 44px;
+  padding: 0.45rem 0;
+}
+.project-more p {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.project-more summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
 
 /* Skill-Chips und Kontakt */
 .skills ul {

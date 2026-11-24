@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">WerkSpot: Karten-Illustration</title><desc id="desc">Schematische Karte mit Strassen, Parkfeld-Markierungen und einer Route. Keine echte App-Ansicht.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0a2537"/><stop offset="1" stop-color="#195369"/></linearGradient><linearGradient id="route" x1="0" x2="1"><stop stop-color="#ff9e49"/><stop offset="1" stop-color="#ffd089"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#061824" flood-opacity="0.45"/></filter></defs>
+<rect width="1200" height="675" fill="url(#bg)"/><circle cx="1040" cy="80" r="280" fill="#73d6db" opacity="0.06"/><circle cx="90" cy="600" r="200" fill="#73d6db" opacity="0.07"/>
+<g transform="translate(130 88)" filter="url(#shadow)"><rect width="940" height="495" rx="32" fill="#e5f4f0"/>
+<path d="M0 115H940 M0 265H940 M0 400H940 M170 0V495 M390 0V495 M640 0V495 M820 0V495" fill="none" stroke="#fff" stroke-width="40"/>
+<path d="M0 115H940 M0 265H940 M0 400H940 M170 0V495 M390 0V495 M640 0V495 M820 0V495" fill="none" stroke="#bad5d4" stroke-width="2"/>
+<rect x="215" y="32" width="130" height="50" rx="12" fill="#b3d9b6"/><rect x="440" y="310" width="145" height="48" rx="12" fill="#a2d8c5"/><rect x="665" y="154" width="118" height="70" rx="12" fill="#bad1d1"/>
+<path d="M125 383 C240 390 295 312 399 282 S580 236 705 255 S836 164 862 122" fill="none" stroke="url(#route)" stroke-width="16" stroke-linecap="round" stroke-dasharray="1 28"/>
+<g fill="#0d5562" stroke="#fff" stroke-width="10"><circle cx="125" cy="383" r="30"/><circle cx="862" cy="122" r="30"/></g><circle cx="862" cy="122" r="11" fill="#ff9e49"/>
+<g transform="translate(305 132)"><rect width="112" height="73" rx="16" fill="#fff"/><rect x="14" y="14" width="84" height="45" rx="10" fill="#ff9e49"/><text x="56" y="48" fill="#163443" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold">P</text></g>
+<g transform="translate(722 310)"><rect width="112" height="73" rx="16" fill="#fff"/><rect x="14" y="14" width="84" height="45" rx="10" fill="#ff9e49"/><text x="56" y="48" fill="#163443" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold">P</text></g>
+</g><rect x="80" y="45" width="220" height="44" rx="22" fill="#0b2235" stroke="#386a77"/><circle cx="108" cy="67" r="8" fill="#ff9e49"/><text x="126" y="74" fill="#f8fafc" font-family="Arial, sans-serif" font-size="19" font-weight="bold">KARTE &amp; ROUTE</text>
+</svg>

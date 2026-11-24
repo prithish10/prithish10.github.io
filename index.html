@@ -65,35 +65,99 @@
       <h2>Meine Projekte</h2>
 
       <p>
-        Eine Auswahl meiner Studienprojekte.
+        Eine Auswahl aus Webentwicklung, Konzeptarbeit und Teamprojekten.
+        Die Illustrationen visualisieren die Projektideen und sind keine App-Screenshots.
       </p>
 
       <div class="project-grid">
-        <article class="project-card">
-          <h3>WerkSpot</h3>
-          <p>
-            Eine Webanwendung zur Suche nach
-            Park- und Ladezonen in Bern.
-            Das Projekt nutzt Parkplatzdaten
-            aus dem Geoportal Bern.
-          </p>
+
+        <!-- WerkSpot: realisierte Webanwendung -->
+        <article class="project-card" aria-labelledby="projekt-werkspot">
+          <img class="project-image" src="werkspot.svg"
+               alt="Illustration einer Stadtkarte mit Parkfeld-Markierungen und einer Route für WerkSpot"
+               width="1200" height="675" loading="lazy" decoding="async">
+          <div class="project-content">
+            <p class="project-type">Webanwendung · Einzelprojekt</p>
+            <h3 id="projekt-werkspot">WerkSpot</h3>
+            <p class="project-description">
+              Eine Webanwendung zur Suche nach Park- und Ladezonen in Bern.
+              Eingebundene Parkplatzdaten aus dem Geoportal Bern unterstützen
+              die Suche nach geeigneten Standorten. Dazu kommen
+              Adresssuche, Umkreissuche und Navigation.
+            </p>
+            <ul class="project-tags" aria-label="Themen und Technologien von WerkSpot">
+              <li>Webentwicklung</li>
+              <li>Geodaten</li>
+              <li>Navigation</li>
+            </ul>
+            <div class="project-actions">
+              <a class="project-link project-link-primary"
+                 href="https://werk-spot-five.vercel.app/"
+                 target="_blank" rel="noopener noreferrer">Web-App öffnen ↗</a>
+              <a class="project-link"
+                 href="https://github.com/prithish10/DeliverySpot"
+                 target="_blank" rel="noopener noreferrer">Quellcode ↗</a>
+            </div>
+          </div>
         </article>
-        <article class="project-card">
-          <h3>StudyShift</h3>
-          <p>
-            Ein Konzept für einen intelligenten
-            Studien- und Alltagsplaner,
-            der durch generative KI unterstützt
-            werden soll.
-          </p>
+
+        <!-- StudyShift: als Konzept kennzeichnen, keine fertige App behaupten -->
+        <article class="project-card" aria-labelledby="projekt-studyshift">
+          <img class="project-image" src="studyshift.svg"
+               alt="Illustration eines Wochenplaners mit Kalenderblöcken und KI-Symbol für StudyShift"
+               width="1200" height="675" loading="lazy" decoding="async">
+          <div class="project-content">
+            <p class="project-type">Konzept · Studienprojekt</p>
+            <h3 id="projekt-studyshift">StudyShift</h3>
+            <p class="project-description">
+              Konzept für einen intelligenten Studien- und Alltagsplaner.
+              Generative KI soll dabei helfen, Lernzeiten und Aufgaben
+              bei kurzfristigen Änderungen neu zu planen.
+            </p>
+            <ul class="project-tags" aria-label="Methoden von StudyShift">
+              <li>GenAI-Konzept</li>
+              <li>Personas</li>
+              <li>Customer Journey</li>
+            </ul>
+            <details class="project-more">
+              <summary>Projektumfang ansehen</summary>
+              <p>
+                Im Rahmen der Semesterarbeit wurden unter anderem Personas,
+                ein Value Proposition Canvas und eine Customer Journey
+                für die Konzeptentwicklung erarbeitet.
+              </p>
+            </details>
+          </div>
         </article>
-        <article class="project-card">
-          <h3>BFH Lost & Found</h3>
-          <p>
-            Ein Gruppenprojekt zur Konzeption
-            einer digitalen Lösung für
-            verlorene und gefundene Gegenstände.
-          </p>
+
+        <!-- Lost & Found: Gruppenprojekt und Konzeption transparent darstellen -->
+        <article class="project-card" aria-labelledby="projekt-lostfound">
+          <img class="project-image" src="lost-found.svg"
+               alt="Illustration einer Fundgegenstand-Karte mit Lupe und Verbindungslinien für Lost & Found"
+               width="1200" height="675" loading="lazy" decoding="async">
+          <div class="project-content">
+            <p class="project-type">Konzeption · Gruppenprojekt</p>
+            <h3 id="projekt-lostfound">BFH Lost &amp; Found</h3>
+            <p class="project-description">
+              In einer Gruppenarbeit wurde eine digitale Lösung für
+              verlorene und gefundene Gegenstände an einer Hochschule
+              konzipiert. Im Mittelpunkt standen Prozesse und
+              die Beschreibung des geplanten Systems.
+            </p>
+            <ul class="project-tags" aria-label="Methoden von Lost and Found">
+              <li>BPMN</li>
+              <li>UML</li>
+              <li>Teamarbeit</li>
+            </ul>
+            <details class="project-more">
+              <summary>Projektumfang ansehen</summary>
+              <p>
+                Gemeinsam im Team entstanden unter anderem Prozessmodelle,
+                UML-Diagramme, Variantenvergleiche und eine
+                Management-Zusammenfassung.
+              </p>
+            </details>
+          </div>
         </article>
 
       </div>
