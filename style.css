@@ -282,22 +282,113 @@ h2 {
   outline-offset: 3px;
 }
 
-/* Skill-Chips und Kontakt */
-.skills ul {
+/* Über mich: Macro-Layout mit zwei eigenständigen Bereichen */
+.section-kicker {
+  margin: 0 0 0.85rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+}
+.about-copy h2 { max-width: 18ch; }
+.about-copy p { margin: 0 0 1.15rem; }
+.about .about-lead {
+  color: var(--text);
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  font-weight: 550;
+  line-height: 1.7;
+}
+.profile-panel {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: clamp(1.25rem, 2.6vw, 2rem);
+  background: linear-gradient(150deg, #1d304b, var(--surface));
+}
+.profile-panel h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+.profile-facts { margin: 0; }
+.profile-facts > div {
+  border-top: 1px solid var(--border);
+  padding: 0.85rem 0 0.9rem;
+}
+.profile-facts dt {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.profile-facts dd {
+  margin: 0.25rem 0 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Skills: eigenständige Kategorien statt einer langen Chip-Liste */
+.skills .section-intro { margin-bottom: 2rem; }
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(1.15rem, 2.6vw, 1.75rem);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(155deg, var(--surface), #111b2d);
+}
+.skill-card-heading {
+  display: flex;
+  gap: 0.8rem;
+  align-items: baseline;
+}
+.skill-index {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+.skill-card h3 {
+  margin: 0;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.35;
+}
+.skill-card > p { margin: 0.8rem 0 1.3rem; color: var(--muted); }
+.skills .skill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: auto 0 0;
   padding: 0;
-  margin: 1.7rem 0 0;
   list-style: none;
 }
-.skills li {
-  padding: 0.6rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface-soft);
+.skills .skill-list li {
+  min-width: 0;
+  margin: 0;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #4a5b73;
+  border-radius: 8px;
+  background: #21314a;
+  color: var(--text);
+  font-size: 0.85rem;
   font-weight: 600;
 }
+
+/* Kontakt */
 .contact a {
   display: inline-block;
   margin-top: 0.8rem;
@@ -317,6 +408,7 @@ h2 {
 /* Tablet */
 @media (max-width: 900px) {
   .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about-layout { grid-template-columns: 1fr; }
   .hero::before { width: 150px; opacity: 0.5; }
 }
 
@@ -343,6 +435,7 @@ h2 {
   .hero > p:not(:first-child) { font-size: 1rem; }
   main > section:not(.hero) { padding-block: 3.5rem; }
   .project-grid { grid-template-columns: 1fr; }
+  .skill-grid { grid-template-columns: 1fr; }
   .project-card { min-height: auto; }
 }
 

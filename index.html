@@ -37,10 +37,9 @@
         Mein Web Engineering Portfolio
       </h1>
       <p>
-        Willkommen auf meinem Portfolio.
-        Hier präsentiere ich meine Projekte,
-        Technologien und Erfahrungen
-        aus dem Studium.
+        Digitale Ideen, Webprojekte und Konzepte aus meinem Studium:
+        Hier zeige ich, wie ich Technik, Daten und
+        nutzerorientiertes Denken verbinde.
       </p>
 
       <a href="#projekte" class="button">
@@ -48,16 +47,52 @@
       </a>
     </section>
 
-    <!-- Über mich -->
-    <section id="ueber-mich" class="about">
-      <h2>Über mich</h2>
-
-      <p>
-        Ich studiere Digital Business & AI an der
-        Berner Fachhochschule und beschäftige
-        mich mit digitalen Geschäftsmodellen,
-        Webentwicklung und neuen Technologien.
-      </p>
+    <!-- Über mich: persönliche Vorstellung und nachvollziehbare Studienschwerpunkte -->
+    <section id="ueber-mich" class="about" aria-labelledby="about-title">
+      <p class="section-kicker">Persönliches Profil</p>
+      <div class="about-layout">
+        <div class="about-copy">
+          <h2 id="about-title">Technologie verstehen. Lösungen gestalten.</h2>
+          <p class="about-lead">
+            Ich studiere Digital Business &amp; AI an der Berner
+            Fachhochschule (BFH) und interessiere mich dafür,
+            wie aus digitalen Ideen nutzbare Anwendungen entstehen.
+          </p>
+          <p>
+            Im Studium beschäftige ich mich mit Web Engineering,
+            Geschäftsprozessen, Daten und künstlicher Intelligenz.
+            Meine Projekte verbinden technische Umsetzung mit
+            Konzeption und nutzerorientiertem Denken.
+          </p>
+          <p>
+            Mit WerkSpot setze ich eine eigene Webanwendung um.
+            In StudyShift und BFH Lost &amp; Found stehen
+            Ideenentwicklung, Modellierung und Zusammenarbeit
+            im Vordergrund.
+          </p>
+        </div>
+        <aside class="profile-panel" aria-labelledby="profile-title">
+          <h3 id="profile-title">Auf einen Blick</h3>
+          <dl class="profile-facts">
+            <div>
+              <dt>Ausbildung</dt>
+              <dd>Berner Fachhochschule (BFH)</dd>
+            </div>
+            <div>
+              <dt>Studiengang</dt>
+              <dd>Digital Business &amp; AI · seit 2025</dd>
+            </div>
+            <div>
+              <dt>Projektpraxis</dt>
+              <dd>Webentwicklung, Prozessmodellierung und Konzeptarbeit</dd>
+            </div>
+            <div>
+              <dt>Interessen</dt>
+              <dd>Web Engineering, KI, UX und digitale Prozesse</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
     </section>
 
     <!-- Projekte -->
@@ -163,21 +198,74 @@
       </div>
     </section>
 
-    <!-- Technologien -->
-    <section id="skills" class="skills">
-      <h2>Technologien & Skills</h2>
-
-      <p>
-        Technologien und Methoden, mit denen
-        ich mich im Studium beschäftige.
+    <!-- Technologien: transparente Kategorien statt einer ungeordneten Mischliste -->
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+      <p class="section-kicker">Technologien &amp; Methoden</p>
+      <h2 id="skills-title">Womit ich arbeite.</h2>
+      <p class="section-intro">
+        Diese Technologien und Methoden nutze ich in Studien- und
+        Einzelprojekten oder lerne ihre Grundlagen im Studium kennen.
+        Die Kategorien zeigen meine aktuellen Schwerpunkte –
+        keine behaupteten Expertenzertifikate.
       </p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git & GitHub</li>
-        <li>BPMN & Prozessmodellierung</li>
-      </ul>
+
+      <div class="skill-grid">
+        <article class="skill-card">
+          <div class="skill-card-heading">
+            <span class="skill-index" aria-hidden="true">01</span>
+            <h3>Webentwicklung</h3>
+          </div>
+          <p>Struktur, Gestaltung und erste interaktive Funktionen von Websites.</p>
+          <ul class="skill-list" aria-label="Kenntnisse in der Webentwicklung">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-card-heading">
+            <span class="skill-index" aria-hidden="true">02</span>
+            <h3>Daten &amp; Schnittstellen</h3>
+          </div>
+          <p>Grundlagen der Datenmodellierung und der Anbindung externer Datenquellen.</p>
+          <ul class="skill-list" aria-label="Kenntnisse zu Daten und Schnittstellen">
+            <li>SQL-Grundlagen</li>
+            <li>ER-Modelle</li>
+            <li>REST-API-Konzepte</li>
+            <li>Geoportal-Daten</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-card-heading">
+            <span class="skill-index" aria-hidden="true">03</span>
+            <h3>Konzeption &amp; UX</h3>
+          </div>
+          <p>Prozesse und Anforderungen darstellen sowie digitale Lösungen planen.</p>
+          <ul class="skill-list" aria-label="Methoden zur Konzeption und User Experience">
+            <li>BPMN</li>
+            <li>UML</li>
+            <li>Personas</li>
+            <li>Customer Journey</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-card-heading">
+            <span class="skill-index" aria-hidden="true">04</span>
+            <h3>Werkzeuge &amp; Deployment</h3>
+          </div>
+          <p>Versionierung, Projektverwaltung und Veröffentlichung von Webprojekten.</p>
+          <ul class="skill-list" aria-label="Entwicklungswerkzeuge und Plattformen">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>GitHub Pages</li>
+            <li>Vercel</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <!-- Kontakt -->
